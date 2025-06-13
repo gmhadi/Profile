@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- In your <head> section, add this custom style -->
+<style>
+  .bg-custom { background-color: #0d9488; }
+  .hover\:bg-custom:hover { background-color: #0f766e; }
+  .text-custom { color: #0d9488; }
+  .border-custom { border-color: #0d9488; }
+</style>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+
+<!-- Then replace all instances of:
+bg-indigo-500 → bg-custom
+hover:bg-indigo-600 → hover:bg-custom
+text-indigo-400 → text-custom
+border-indigo-500 → border-custom
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+  </head>
+  <body class="scroll-smooth">
+    <header class="text-gray-400 bg-gray-900 body-font sticky top-0 z-50">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+    
+    <!-- Logo -->
+    <a href="#" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <div class="w-10 h-10 bg-custom text-white rounded-full flex items-center justify-center font-bold text-xl">AH</div>
+      <span class="ml-3 text-xl">Abdul Hadi</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav class="md:ml-auto flex items-center space-x-5">
+      <a href="#about" class="hover:text-custom transition">About</a>
+      <a href="#skills" class="hover:text-custom transition">Skills</a>
+      <a href="#projects" class="hover:text-custom transition">Projects</a>
+      <a href="#testimonials" class="mr-5 hover:text-gray-900">Testimonials</a>
+      <a href="#contact" class="hover:text-custom transition">Contact</a>
+      <a href="#Find Me" class="mr-5 hover:text-gray-900">Find Me</a>
+
+      <!-- Download CV Button -->
+      <a href="https://drive.google.com/file/d/1N4aSQlXG8dSSpQXNF9kzq0eVO8XTqtUs/view?usp=sharing"
+         target="_blank"
+         class="ml-3 inline-flex items-center bg-custom border-0 py-1 px-3 focus:outline-none hover:bg-teal-600 rounded text-sm text-white transition">
+        Download CV
+        <i class="fas fa-download ml-2 text-xs"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+
+<!-- hero -->
+ <section id="about" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+        Hi, I'm <span class="text-custom">Abdul Hadi</span>
+        <br class="hidden lg:inline-block">I build <span class="text-custom">digital experiences</span>
+      </h1>
+      <p class="mb-8 leading-relaxed">Web developer specializing in responsive design and AI integration. Currently focused on creating accessible, user-friendly applications.</p>
+      <div class="flex justify-center">
+        <a href="#projects" class="inline-flex text-white bg-custom border-0 py-2 px-6 focus:outline-none hover:bg-custom rounded text-lg">View My Work</a>
+        <a href="#contact" class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Let's Talk</a>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded-full border-4 border-custom" alt="Abdul Hadi" src="https://lh3.googleusercontent.com/a/ACg8ocLhddLRygZPwxqwdhMH4mWyezPhTdsu5g2h2K6P9ZzFzMwbSwQ=s288-c-no">
+    </div>
+  </div>
+</section>
+      <!-- 2- hero end -->
+       <!-- projects -->
+        <section id="projects" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">My Projects</h1>
+        <div class="h-1 w-20 bg-custom rounded"></div>
+      </div>
+      <p class="lg:w-1/2 w-full leading-relaxed">Here are some of my recent works showcasing my skills.</p>
+    </div>
+    <div class="flex flex-wrap justify-center -m-4">
+  <!-- Project card yahan hoga -->
+
+
+<!-- Project 1: Teachable Machine Color Detection -->
+<div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-700 transition duration-300 cursor-pointer">
+
+    <!-- Wrap only this part with link -->
+    <a href="https://teachablemachine.withgoogle.com/models/FtEtMVSL-/" target="_blank" class="block">
+      <div class="w-16 h-16 mx-auto mb-6 bg-custom text-white rounded-full flex items-center justify-center text-2xl">
+        <i class="fas fa-brain"></i>
+      </div>
+      <h2 class="text-lg text-white font-medium title-font mb-2">Project 1</h2>
+      <p class="leading-relaxed">
+        Built using Google’s Teachable Machine, this model detects and classifies colors in real-time using your webcam.
+      </p>
+    </a>
+
+    <!-- GitHub icon stays outside -->
+    <div class="mt-4 text-right">
+      <a href="https://github.com/gmhadi/teachable-models/blob/main/color-detector.html" target="_blank" class="text-gray-400 hover:text-white">
+  <i class="fab fa-github text-xl"></i>
+</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      
+
+     
+
+    </div>
+  </div>
+</section>
+<!-- skills -->
+ 
+<!-- Skills Section -->
+<section id="skills" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">My Skills</h1>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-custom inline-flex"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 justify-items-center">
+      <!-- React -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fab fa-react text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">React</h2>
+        <p class="leading-relaxed">Advanced</p>
+      </div>
+
+      <!-- Node.js -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fab fa-node-js text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">Node.js</h2>
+        <p class="leading-relaxed">Advanced</p>
+      </div>
+
+      <!-- HTML5 -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fab fa-html5 text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">HTML5</h2>
+        <p class="leading-relaxed">Expert</p>
+      </div>
+
+      <!-- CSS3 -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fab fa-css3-alt text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">CSS3</h2>
+        <p class="leading-relaxed">Expert</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fab fa-js-square text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">JavaScript</h2>
+        <p class="leading-relaxed">Advanced</p>
+      </div>
+
+      <!-- Tailwind CSS -->
+      <div class="w-full max-w-sm border-2 border-gray-800 px-6 py-8 rounded-xl hover:scale-105 transform transition duration-300 text-center shadow-md">
+        <i class="fas fa-wind text-5xl text-custom mb-4"></i>
+        <h2 class="text-xl font-medium text-white mb-1">Tailwind CSS</h2>
+        <p class="leading-relaxed">Advanced</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- steps -->
+ <section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">My Journey</h1>
+      <div class="h-1 w-20 bg-custom rounded mt-4 mx-auto"></div>
+    </div>
+    
+    <!-- Timeline Item 1 -->
+    <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-custom text-white relative z-10 title-font font-medium text-sm">1</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-custom rounded-full inline-flex items-center justify-center">
+          <i class="fas fa-graduation-cap text-3xl"></i>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-white mb-1 text-xl">BS Computer Science</h2>
+          <h3 class="text-gray-500 mb-3">University of Balochistan (2018-2022)</h3>
+          <p class="leading-relaxed">Specialized in web development and AI applications. Graduated with honors and completed thesis on machine learning applications.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Timeline Item 2 -->
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-custom text-white relative z-10 title-font font-medium text-sm">2</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-custom rounded-full inline-flex items-center justify-center">
+          <i class="fas fa-laptop-code text-3xl"></i>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-white mb-1 text-xl">Frontend Developer</h2>
+          <h3 class="text-gray-500 mb-3">Tech Solutions Inc. (2022-2023)</h3>
+          <p class="leading-relaxed">Developed responsive web applications using React.js and implemented UI/UX best practices that increased user engagement by 35%.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Timeline Item 3 -->
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-custom text-white relative z-10 title-font font-medium text-sm">3</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-custom rounded-full inline-flex items-center justify-center">
+          <i class="fas fa-robot text-3xl"></i>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-white mb-1 text-xl">AI Developer</h2>
+          <h3 class="text-gray-500 mb-3">InnovateAI (2023-Present)</h3>
+          <p class="leading-relaxed">Building generative AI solutions and implementing machine learning models that automate business processes and improve efficiency.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Timeline Item 4 -->
+    <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-custom text-white relative z-10 title-font font-medium text-sm">4</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-custom rounded-full inline-flex items-center justify-center">
+          <i class="fas fa-globe text-3xl"></i>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-white mb-1 text-xl">Full Stack Developer</h2>
+          <h3 class="text-gray-500 mb-3">Freelance (2020-Present)</h3>
+          <p class="leading-relaxed">Delivering complete web solutions for international clients, combining frontend design with backend functionality and database management.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- steps end -->
+ <!-- certifications -->
+  <section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">My Certifications</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Validations of my technical expertise</p>
+    </div>
+    <div class="flex flex-wrap -m-4 justify-center">
+      <div class="p-4 md:w-1/3 w-full">
+        <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-custom text-white flex-shrink-0">
+              <i class="fas fa-certificate text-xs"></i>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">AWS Certified Developer</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-sm">Issued: June 2023 | Expires: June 2026</p>
+            <a class="mt-3 text-custom inline-flex items-center">View Credential
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more certifications -->
+    </div>
+  </div>
+</section>
+ <!-- -Testimonial -->
+<section id="testimonials"class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
+    <div class="flex flex-wrap -m-4">
+      <!-- Testimonial 1 -->
+      <div class="p-4 md:w-1/3 w-full">
+        <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+          <div class="flex items-center mb-4">
+            <img alt="testimonial" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" src="data:image/jpeg;base64,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">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-white">Aurther</span>
+              <span class="text-gray-500 text-sm">Senior Product Designer</span>
+            </span>
+          </div>
+          <p class="leading-relaxed mb-6">"Abdul developed our e-commerce platform with great attention to detail. The site performance improved by 40% and we saw immediate sales growth."</p>
+          <div class="inline-flex items-center">
+            <span class="flex-grow flex flex-col">
+              <span class="text-xs text-gray-400">Project: E-commerce Website</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="p-4 md:w-1/3 w-full">
+        <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+          <div class="flex items-center mb-4">
+            <img alt="testimonial" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" src="https://img.freepik.com/free-photo/portrait-young-handsome-man-jacket-holding-laptop_171337-19839.jpg?semt=ais_hybrid&w=740">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-white">John</span>
+              <span class="text-gray-500 text-sm">UI Develeoper</span>
+            </span>
+          </div>
+          <p class="leading-relaxed mb-6">"The AI solution Abdul implemented saved us hundreds of hours in manual work. His technical skills are matched by his professionalism."</p>
+          <div class="inline-flex items-center">
+            <span class="flex-grow flex flex-col">
+              <span class="text-xs text-gray-400">Project: AI Automation</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="p-4 md:w-1/3 w-full">
+        <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+          <div class="flex items-center mb-4">
+            <img alt="testimonial" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" src="https://thoughtcatalog.com/wp-content/uploads/2024/10/You-Joe-Goldberg.webp?w=1280">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-white">Johanathan Moore</span>
+              <span class="text-gray-500 text-sm">Web Developer</span>
+            </span>
+          </div>
+          <p class="leading-relaxed mb-6">"Working with Abdul was a pleasure. He delivered our web application ahead of schedule and under budget while exceeding all requirements."</p>
+          <div class="inline-flex items-center">
+            <span class="flex-grow flex flex-col">
+              <span class="text-xs text-gray-400">Project: Web Application</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- 4-Testimonial end -->
+       <!-- contact -->
+<section id="contact" class="text-gray-400 bg-gray-900 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+        Get In Touch
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap -m-4">
+      <!-- FORM -->
+      <div class="p-4 lg:w-1/2 w-full">
+        <form action="https://formsubmit.co/maihadihoon@gmail.com" method="POST"
+              class="bg-gray-800 bg-opacity-60 p-8 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-custom focus:ring-2 focus:ring-teal-900 text-base outline-none text-gray-100 py-2 px-3 transition duration-200 ease-in-out" />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-custom focus:ring-2 focus:ring-teal-900 text-base outline-none text-gray-100 py-2 px-3 transition duration-200 ease-in-out" />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+            <textarea id="message" name="message" required
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-custom focus:ring-2 focus:ring-teal-900 h-32 text-base outline-none text-gray-100 py-2 px-3 transition duration-200 ease-in-out"></textarea>
+          </div>
+          <button type="submit"
+            class="flex mx-auto text-white bg-custom border-0 py-2 px-8 hover:bg-teal-600 rounded text-lg transition duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- MOSQUE MAP -->
+      <div class="p-4 lg:w-1/2 w-full">
+        <div class="rounded-lg overflow-hidden shadow-lg h-full">
+          <iframe
+            width="100%"
+            height="100%"
+            style="min-height: 400px;"
+            class="grayscale contrast-125 opacity-80 rounded"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            title="Bugti Street Mosque, Quetta"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20390.12345678901!2d67.015556!3d30.188333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2e8abc1234567%3A0xmymosquelocation!2sBugti%20Street%20Mosque!5e0!3m2!1sen!2s!4v9999999999999!5m2!1sen!2s"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+ <section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Ready to start your project?</h1>
+      <button class="flex-shrink-0 text-white bg-custom border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg mt-10 sm:mt-0">Hire Me</button>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer id="Find Me" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    
+    <!-- Your Preferred Logo Style -->
+    <a class="flex title-font font-medium items-center text-white mb-4 sm:mb-0">
+      <i class="fas fa-code text-custom text-2xl mr-2"></i>
+      <span class="text-xl">Hadi's Portfolio</span>
+    </a>
+
+    <!-- Copyright -->
+    <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2025 Hadi Dev —
+      <a href="mailto:maihadihoon@gmail.com" class="text-gray-500 ml-1 hover:underline" target="_blank">maihadihoon@gmail.com</a>
+    </p>
+
+    <!-- Social Media Icons -->
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href="https://t.me/maihadihoon" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-telegram-plane text-xl"></i>
+      </a>
+      <a href="https://www.instagram.com/abdul__hadi__qureshi/" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+      <a href="https://www.snapchat.com/add/maihadihoon" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-snapchat-ghost text-xl"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61564132855584" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-facebook-f text-xl"></i>
+      </a>
+      <a href="https://github.com/gmhadi" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-github text-xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/abdul-hadi-kureshi-a9226a369/" target="_blank" class="text-gray-400 hover:text-white mx-1">
+        <i class="fab fa-linkedin-in text-xl"></i>
+      </a>
+    </span>
+  </div>
+</footer>
+
+
+
+
+
+
+  </body>
+</html>
